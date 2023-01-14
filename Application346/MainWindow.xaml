@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Application346"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid>
-        
+        Title="Главная" Height="402" Width="332" WindowStartupLocation="CenterScreen" MinWidth="332" MinHeight="402" MaxWidth="332" MaxHeight="402" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center">
+    <Window.Background>
+        <ImageBrush ImageSource="backgroun1d.png" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid Height="371" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="OrderBtn" Content="Оформление заказа" HorizontalAlignment="Center" Margin="0,115,0,0" Width="284" Height="55" Background="#A5492500" BorderBrush="Gold" Foreground="Gold" FontSize="24" FontFamily="Arial" FontWeight="Bold" VerticalAlignment="Top" Click="OrderBtn_Click"/>
+        <Button x:Name="TablesBtn" Content="Таблицы" HorizontalAlignment="Center" Margin="0,175,0,0" Width="284" Height="55" Background="#A5492500" BorderBrush="Gold" Foreground="Gold" FontSize="24" FontFamily="Arial" VerticalAlignment="Top"/>
+        <Button x:Name="ReportsBtn" Content="Отчеты" HorizontalAlignment="Center" Margin="0,235,0,0" Width="284" Height="55" Background="#A5492500" BorderBrush="Gold" Foreground="Gold" FontSize="24" FontFamily="Arial" VerticalAlignment="Top"/>
+        <Button x:Name="ExitBtn" Content="Выход" HorizontalAlignment="Center" Margin="0,295,0,0" Width="284" Height="55" Background="#FF952200" BorderBrush="Gold" Foreground="Gold" FontSize="24" FontFamily="Arial" FontWeight="Bold" FontStyle="Italic" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="81" Margin="50,15,0,0" VerticalAlignment="Top" Width="217" Source="logo.png"/>
+
     </Grid>
 </Window>
