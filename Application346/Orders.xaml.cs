@@ -10,26 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Application346
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Orders.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Orders : Window
     {
-        public MainWindow()
+        public Orders()
         {
             InitializeComponent();
-        }
-
-        private void OrderBtn_Click(object sender, RoutedEventArgs e)
-        {
-            Orders orders = new Orders();
-            orders.Show();
-            this.Hide();
         }
     }
 }
