@@ -1,79 +1,62 @@
 CREATE TABLE `Клиенты` (
-	`id_client` INT NOT NULL AUTO_INCREMENT,
+	`id_client` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	`first_name` VARCHAR(255) NOT NULL,
 	`surname` VARCHAR(255) NOT NULL,
 	`patronymic` VARCHAR(255) NOT NULL,
 	`age` VARCHAR(255) NOT NULL,
 	`number` VARCHAR(255) NOT NULL,
-	`email` VARCHAR(255) NOT NULL,
-	PRIMARY KEY (`id_client`)
-);
-
-CREATE TABLE `Заявка` (
-	`id_request` INT NOT NULL AUTO_INCREMENT,
-	`id_client` INT NOT NULL AUTO_INCREMENT,
-	`id_product` INT NOT NULL AUTO_INCREMENT,
-	`total` INT NOT NULL,
-	`amount` INT NOT NULL,
-	PRIMARY KEY (`id_request`)
-);
-
-CREATE TABLE `Часы` (
-	`id_product` INT NOT NULL AUTO_INCREMENT,
-	`id_sex` INT NOT NULL AUTO_INCREMENT,
-	`id_brand` INT NOT NULL AUTO_INCREMENT,
-	`id_country` INT NOT NULL AUTO_INCREMENT,
-	`id_style` INT NOT NULL AUTO_INCREMENT,
-	`id_watchcase` INT NOT NULL AUTO_INCREMENT,
-	`price` INT NOT NULL,
-	PRIMARY KEY (`id_product`)
+	`email` VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE `Пол` (
-	`id_sex` INT NOT NULL AUTO_INCREMENT,
-	`sex` VARCHAR(255) NOT NULL,
-	PRIMARY KEY (`id_sex`)
+	`id_sex` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`sex` VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE `Бренд` (
-	`id_brand` INT NOT NULL AUTO_INCREMENT,
-	`brand` VARCHAR(255) NOT NULL,
-	PRIMARY KEY (`id_brand`)
+	`id_brand` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`brand` VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE `Страна` (
-	`id_country` INT NOT NULL AUTO_INCREMENT,
-	`country_name` VARCHAR(255) NOT NULL,
-	PRIMARY KEY (`id_country`)
+	`id_country` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`country_name` VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE `Стиль` (
-	`id_style` INT NOT NULL AUTO_INCREMENT,
-	`style_name` VARCHAR(255) NOT NULL,
-	PRIMARY KEY (`id_style`)
+	`id_style` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`style_name` VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE `Корпус` (
-	`id_watchcase` INT NOT NULL AUTO_INCREMENT,
-	`watchcase_name` VARCHAR(255) NOT NULL,
-	PRIMARY KEY (`id_watchcase`)
+	`id_watchcase` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`watchcase_name` VARCHAR(255) NOT NULL
 );
 
-ALTER TABLE `Заявка` ADD CONSTRAINT `Заявка_fk0` FOREIGN KEY (`id_client`) REFERENCES `Клиенты`(`id_client`);
+CREATE TABLE `Часы` (
+	`id_product` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`id_sex` INT NOT NULL,
+	`id_brand` INT NOT NULL,
+	`id_country` INT NOT NULL,
+	`id_style` INT NOT NULL,
+	`id_watchcase` INT NOT NULL,
+	`price` INT NOT NULL,
+    FOREIGN KEY(id_sex) REFERENCES Пол(id_sex),
+    FOREIGN KEY(id_brand) REFERENCES Бренд(id_brand),
+    FOREIGN KEY(id_country) REFERENCES Страна(id_country),
+    FOREIGN KEY(id_style) REFERENCES Стиль(id_style),
+    FOREIGN KEY(id_watchcase) REFERENCES Корпус(id_watchcase)
+);
 
-ALTER TABLE `Заявка` ADD CONSTRAINT `Заявка_fk1` FOREIGN KEY (`id_product`) REFERENCES `Часы`(`id_product`);
-
-ALTER TABLE `Часы` ADD CONSTRAINT `Часы_fk0` FOREIGN KEY (`id_sex`) REFERENCES `Пол`(`id_sex`);
-
-ALTER TABLE `Часы` ADD CONSTRAINT `Часы_fk1` FOREIGN KEY (`id_brand`) REFERENCES `Бренд`(`id_brand`);
-
-ALTER TABLE `Часы` ADD CONSTRAINT `Часы_fk2` FOREIGN KEY (`id_country`) REFERENCES `Страна`(`id_country`);
-
-ALTER TABLE `Часы` ADD CONSTRAINT `Часы_fk3` FOREIGN KEY (`id_style`) REFERENCES `Стиль`(`id_style`);
-
-ALTER TABLE `Часы` ADD CONSTRAINT `Часы_fk4` FOREIGN KEY (`id_watchcase`) REFERENCES `Корпус`(`id_watchcase`);
-
-
+CREATE TABLE `Заявка` (
+	`id_request` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`id_client` INT NOT NULL,
+	`id_product` INT NOT NULL,
+	`total` INT NOT NULL,
+	`amount` INT NOT NULL,
+    FOREIGN KEY(id_client) REFERENCES Клиенты(id_client),
+    FOREIGN KEY(id_product) REFERENCES Часы(id_product)
+);
 
 
 
