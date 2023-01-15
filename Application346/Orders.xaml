@@ -32,6 +32,7 @@
         <Label x:Name="АmountLabel" Content="Кол-во" HorizontalAlignment="Left" Margin="516,302,0,0" VerticalAlignment="Top" Foreground="Gold" FontFamily="Arial" FontSize="24"/>
         <TextBox x:Name="AmountTextBox" HorizontalAlignment="Right" Height="34" Margin="0,303,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" FontFamily="Arial" FontSize="24" Background="#C9492500" BorderBrush="Gold" Foreground="Gold" VerticalContentAlignment="Center"/>
         <Button x:Name="ClientSavedBtn" Content="Сохранить" HorizontalAlignment="Right" Margin="0,53,418,0" Width="114" Height="34" Background="#A5492500" BorderBrush="Gold" Foreground="Gold" FontSize="20" FontFamily="Arial" VerticalAlignment="Top" Padding="0,1"/>
+        <Button x:Name="BackBtn" Content="Назад" HorizontalAlignment="Right" Margin="0,410,805,0" Width="114" Height="34" Background="#A5492500" BorderBrush="Gold" Foreground="Gold" FontSize="20" FontFamily="Arial" VerticalAlignment="Top" Padding="0,1" Click="BackBtn_Click" FontWeight="Bold" FontStyle="Italic"/>
 
     </Grid>
 </Window>

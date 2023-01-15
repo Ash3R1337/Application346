@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Application346
 {
     /// <summary>
-    /// Логика взаимодействия для Orders.xaml
+    /// Логика взаимодействия для Tables.xaml
     /// </summary>
-    public partial class Orders : Window
+    public partial class Tables : Window
     {
-        public Orders()
+        public Tables()
         {
             InitializeComponent();
         }

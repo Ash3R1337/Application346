@@ -32,5 +32,12 @@ namespace Application346
             orders.Show();
             this.Hide();
         }
+
+        private void TablesBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Tables tables = new Tables();
+            tables.Show();
+            this.Hide();
+        }
     }
 }
