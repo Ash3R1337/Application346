@@ -28,7 +28,7 @@ CREATE TABLE `бренд` (
   `id_brand` int(11) NOT NULL AUTO_INCREMENT,
   `brand` varchar(255) NOT NULL,
   PRIMARY KEY (`id_brand`)
-) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `бренд` (
 
 LOCK TABLES `бренд` WRITE;
 /*!40000 ALTER TABLE `бренд` DISABLE KEYS */;
-INSERT INTO `бренд` VALUES (1,'6MX'),(2,'Adriatica'),(3,'Anne Klein'),(4,'Armand Nicolet'),(5,'Armani Exchange'),(6,'Armin Strom'),(7,'Auguste Reymond'),(8,'Aviator'),(9,'BALL'),(10,'Balmain'),(11,'Boccia Titanium'),(12,'Bomberg'),(13,'Calvin Klein'),(14,'Candino'),(15,'Carl von Zeyten'),(16,'Casio'),(17,'Certina'),(18,'Citizen'),(19,'Continental'),(20,'Cornavin'),(21,'Corum'),(22,'Cuervo y Sobrinos'),(23,'CYSTOS'),(24,'D1 Milano'),(25,'Daniel Klein'),(26,'Daniel Wellington'),(27,'DAYOSA'),(28,'Delbana'),(29,'Delma'),(30,'Diesel'),(31,'DKNY'),(32,'Doodle'),(33,'Ducati'),(34,'Elysee'),(35,'Emporio Armani'),(36,'Epos'),(37,'Festina'),(38,'Fossil'),(39,'Freelook'),(40,'Furla'),(41,'Garmin'),(42,'Graham'),(43,'Gucci'),(44,'Guess'),(45,'Hugo Boss'),(46,'Invicta'),(47,'Jacques Lemans'),(48,'L Duchen'),(49,'Lee Cooper'),(50,'Mathey-Tissot'),(51,'Orient'),(52,'Q&Q'),(53,'Rodania'),(54,'Santa Barbara Polo & Racquet'),(55,'Seiko'),(56,'SOKOLOV'),(57,'Stuhrling'),(58,'TAG Hever'),(59,'Tommy Hilfiger'),(60,'Versace'),(61,'Vostok Europe'),(62,'Wainer'),(63,'Михаил Москвитин'),(64,'Восток');
+INSERT INTO `бренд` VALUES (1,'6MX'),(2,'Adriatica'),(3,'Anne Klein'),(4,'Armand Nicolet'),(5,'Armani Exchange'),(6,'Armin Strom'),(7,'Auguste Reymond'),(8,'Aviator'),(9,'BALL'),(10,'Balmain'),(11,'Boccia Titanium'),(12,'Bomberg'),(13,'Calvin Klein'),(14,'Candino'),(15,'Carl von Zeyten'),(16,'Casio'),(17,'Certina'),(18,'Citizen'),(19,'Continental'),(20,'Cornavin'),(21,'Corum'),(22,'Cuervo y Sobrinos'),(23,'CYSTOS'),(24,'D1 Milano'),(25,'Daniel Klein'),(26,'Daniel Wellington'),(27,'DAYOSA'),(28,'Delbana'),(29,'Delma'),(30,'Diesel'),(31,'DKNY'),(32,'Doodle'),(33,'Ducati'),(34,'Elysee'),(35,'Emporio Armani'),(36,'Epos'),(37,'Festina'),(38,'Fossil'),(39,'Freelook'),(40,'Furla'),(41,'Garmin'),(42,'Graham'),(43,'Gucci'),(44,'Guess'),(45,'Hugo Boss'),(46,'Invicta'),(47,'Jacques Lemans'),(48,'L Duchen'),(49,'Lee Cooper'),(50,'Mathey-Tissot'),(51,'Orient'),(52,'Q&Q'),(53,'Rodania'),(54,'Santa Barbara Polo & Racquet'),(55,'Seiko'),(56,'SOKOLOV'),(57,'Stuhrling'),(58,'TAG Hever'),(59,'Tommy Hilfiger'),(60,'Versace'),(61,'Vostok Europe'),(62,'Wainer'),(63,'Михаил Москвитин'),(64,'Восток'),(65,'Ника');
 /*!40000 ALTER TABLE `бренд` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -56,6 +56,7 @@ CREATE TABLE `часы` (
   `id_style` int(11) NOT NULL,
   `id_watchcase` int(11) NOT NULL,
   `price` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id_product`),
   KEY `id_sex` (`id_sex`),
   KEY `id_brand` (`id_brand`),
@@ -67,7 +68,7 @@ CREATE TABLE `часы` (
   CONSTRAINT `часы_ibfk_3` FOREIGN KEY (`id_country`) REFERENCES `страна` (`id_country`),
   CONSTRAINT `часы_ibfk_4` FOREIGN KEY (`id_style`) REFERENCES `стиль` (`id_style`),
   CONSTRAINT `часы_ibfk_5` FOREIGN KEY (`id_watchcase`) REFERENCES `корпус` (`id_watchcase`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -76,6 +77,7 @@ CREATE TABLE `часы` (
 
 LOCK TABLES `часы` WRITE;
 /*!40000 ALTER TABLE `часы` DISABLE KEYS */;
+INSERT INTO `часы` VALUES (1,2,3,4,2,2,5450,'3379SVSI'),(2,1,55,2,4,2,19860,'SNKK11J1'),(3,1,24,6,4,2,18210,'UTNJ01'),(4,1,12,1,6,3,116900,'BS45CHPBA.049.3'),(5,2,65,3,2,1,40250,'0312.0.1.31H');
 /*!40000 ALTER TABLE `часы` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -221,7 +223,7 @@ CREATE TABLE `страна` (
   `id_country` int(11) NOT NULL AUTO_INCREMENT,
   `country_name` varchar(255) NOT NULL,
   PRIMARY KEY (`id_country`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -230,7 +232,7 @@ CREATE TABLE `страна` (
 
 LOCK TABLES `страна` WRITE;
 /*!40000 ALTER TABLE `страна` DISABLE KEYS */;
-INSERT INTO `страна` VALUES (1,'Швейцария'),(2,'Япония'),(3,'Россия'),(4,'США'),(5,'Германия');
+INSERT INTO `страна` VALUES (1,'Швейцария'),(2,'Япония'),(3,'Россия'),(4,'США'),(5,'Германия'),(6,'Италия');
 /*!40000 ALTER TABLE `страна` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -243,4 +245,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-01-15 19:07:21
+-- Dump completed on 2023-01-15 22:08:05
