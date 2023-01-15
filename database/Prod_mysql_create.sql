@@ -1,11 +1,11 @@
 CREATE TABLE `Клиенты` (
 	`id_client` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	`first_name` VARCHAR(255) NOT NULL,
 	`surname` VARCHAR(255) NOT NULL,
+	`first_name` VARCHAR(255) NOT NULL,
 	`patronymic` VARCHAR(255) NOT NULL,
-	`age` VARCHAR(255) NOT NULL,
-	`number` VARCHAR(255) NOT NULL,
-	`email` VARCHAR(255) NOT NULL
+	`age` INT(3),
+	`number` INT(11),
+	`email` VARCHAR(255)
 );
 
 CREATE TABLE `Пол` (
