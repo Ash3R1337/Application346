@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using AHlibrary;
 
 namespace Application346
 {
@@ -29,6 +30,12 @@ namespace Application346
             MainWindow mw = new MainWindow();
             mw.Show();
             this.Close();
+        }
+
+        private void TablesOpenBtn_Click(object sender, RoutedEventArgs e)
+        {
+            DBconnect dBconnect = new DBconnect();
+            dBconnect.DB(SelectTablesComboBox.Text, ClientsDataGrid, "root");
         }
     }
 }

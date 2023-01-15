@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Application346"
         mc:Ignorable="d"
-        Title="Главная" Height="402" Width="332" WindowStartupLocation="CenterScreen" MinWidth="332" MinHeight="402" MaxWidth="332" MaxHeight="402" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center">
+        Title="Главная" Height="402" Width="332" WindowStartupLocation="CenterScreen" MinWidth="332" MinHeight="402" MaxWidth="332" MaxHeight="402" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" ResizeMode="NoResize">
     <Window.Background>
         <ImageBrush ImageSource="backgroun1d.png" Stretch="UniformToFill"/>
     </Window.Background>
