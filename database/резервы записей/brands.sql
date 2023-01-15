@@ -61,5 +61,7 @@ INSERT INTO бренд VALUES (60,"Versace");
 INSERT INTO бренд VALUES (61,"Vostok Europe");
 INSERT INTO бренд VALUES (62,"Wainer");
 INSERT INTO бренд VALUES (63,"Михаил Москвитин");
-INSERT INTO бренд VALUES (64,"Восток"); */
+INSERT INTO бренд VALUES (64,"Восток");
+INSERT INTO бренд VALUES (65,"Ника");
+ */
 SELECT * FROM бренд
