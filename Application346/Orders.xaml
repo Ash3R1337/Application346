@@ -9,5 +9,17 @@
     <Window.Background>
         <ImageBrush ImageSource="backgroun1d.png"/>
     </Window.Background>
-    <Grid/>
+    <Grid>
+        <Label x:Name="SurnameLabel" Content="Фамилия" HorizontalAlignment="Left" Margin="8,87,0,0" VerticalAlignment="Top" Foreground="Gold" FontFamily="Arial" FontSize="24"/>
+        <TextBox x:Name="SurnameTextBox" HorizontalAlignment="Left" Height="34" Margin="125,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" FontFamily="Arial" FontSize="24" Background="#C9492500" BorderBrush="Gold" Foreground="Gold" VerticalContentAlignment="Center"/>
+        <Label x:Name="FirstNameLabel" Content="Имя" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Foreground="Gold" FontFamily="Arial" FontSize="24"/>
+        <TextBox x:Name="FirstNameTextBox" HorizontalAlignment="Left" Height="34" Margin="125,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" FontFamily="Arial" FontSize="24" Background="#C9492500" BorderBrush="Gold" Foreground="Gold" VerticalContentAlignment="Center"/>
+        <Label x:Name="OrdersLabel" Content="Оформление заказа" HorizontalAlignment="Left" Margin="350,10,0,0" VerticalAlignment="Top" Foreground="Gold" FontFamily="Arial" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="ClientLabel" Content="Заказчик" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Foreground="Gold" FontFamily="Arial" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="PatronymicLabel" Content="Отчество" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Foreground="Gold" FontFamily="Arial" FontSize="24"/>
+        <TextBox x:Name="PatronymicTextBox" HorizontalAlignment="Left" Height="34" Margin="125,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" FontFamily="Arial" FontSize="24" Background="#C9492500" BorderBrush="Gold" Foreground="Gold" VerticalContentAlignment="Center"/>
+        <Label x:Name="WatchesLabel" Content="Часы" HorizontalAlignment="Left" Margin="10,217,0,0" VerticalAlignment="Top" Foreground="Gold" FontFamily="Arial" FontSize="24" FontWeight="Bold"/>
+        <ComboBox HorizontalAlignment="Left" Margin="125,257,0,0" VerticalAlignment="Top" Width="287" FontFamily="Arial" FontSize="24"/>
+
+    </Grid>
 </Window>
