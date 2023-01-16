@@ -16,7 +16,7 @@ namespace AHlibrary
 
         DbDataAdapter adapter;
         DataTable dt;
-
+        MySqlConnection conn;
 
         /// <summary>
         /// Выполняет подключение к базе данных,
@@ -33,7 +33,7 @@ namespace AHlibrary
         /// подключения к БД</param>
         public void DB(string dbname, string table, DataGrid dataGrid, string password) //Подключение к БД
         {
-            MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database="+dbname+";port=3306;password="+password+";");
+            conn = new MySqlConnection("server=localhost;user=root;database="+dbname+";port=3306;password="+password+";");
             string sql = "SELECT * FROM " + table;
             adapter = new MySqlDataAdapter(sql, conn);
             conn.Open();
@@ -47,6 +47,42 @@ namespace AHlibrary
             dataGrid.ItemsSource = dt.DefaultView; //привязка к DataGrid
         }
 
+        /// <summary>
+        /// Поиск строки в таблице
+        /// </summary>
+        /// <param name="dataGrid"></param>
+        /// <param name="table"></param>
+        /// <param name="cond"></param>
+        /// <param name="SearchName"></param>
+        public void TableSearch(DataGrid dataGrid, string table, string cond, string SearchName)
+        {
+            string sql = "SELECT * FROM "+table+" WHERE "+cond+" LIKE '"+SearchName+"%'";
+            adapter = new MySqlDataAdapter(sql, conn);
+            MySqlCommandBuilder myCommandBuilder = new MySqlCommandBuilder(adapter as MySqlDataAdapter);
+            adapter.InsertCommand = myCommandBuilder.GetInsertCommand();
+            adapter.UpdateCommand = myCommandBuilder.GetUpdateCommand();
+            adapter.DeleteCommand = myCommandBuilder.GetDeleteCommand();
+            dt = new DataTable();
+            adapter.Fill(dt);
+            dataGrid.ItemsSource = dt.DefaultView;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="comboBox"></param>
+        /// <param name="value"></param>
+        /// <param name="table"></param>
+        public void FillCombobox(ComboBox comboBox, string value, string table)
+        {
+            string sql = "SELECT " + value + " FROM " + table;
+            adapter = new MySqlDataAdapter(sql, conn);
+            dt = new DataTable();
+            adapter.Fill(dt);
+            comboBox.ItemsSource = dt.DefaultView;
+            comboBox.DisplayMemberPath = value;
+        }
+        
         /// <summary>
         /// Сохраняет все измененные данные
         /// из DataGrid в базу данных   
