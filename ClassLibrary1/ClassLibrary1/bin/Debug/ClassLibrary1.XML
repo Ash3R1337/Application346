@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibrary1</name>
+    </assembly>
+    <members>
+        <member name="T:AHlibrary.DBconnect">
+            <summary>
+            Класс DBconnect предоставляет функции для работы с базой данных,
+            а именно для подключения, сохранения таблицы и других
+            различных действий, необходимых для работы
+            </summary>
+        </member>
+        <member name="M:AHlibrary.DBconnect.DB(System.String,System.String,System.Windows.Controls.DataGrid,System.String)">
+            <summary>
+            Выполняет подключение к базе данных,
+            после чего выгружает данные из
+            определенной таблицы в DataGrid
+            </summary>
+            <param name="dbname">Название базы данных</param>
+            <param name="table">Передает таблицу, которая должна
+            быть выведена в DataGrid</param>
+            <param name="dataGrid">Передает элемент dataGrid,
+            в который будут переданы данные из
+            выбранной таблицы</param>
+            <param name="password">Пароль для
+            подключения к БД</param>
+        </member>
+        <member name="M:AHlibrary.DBconnect.SaveTable">
+            <summary>
+            Сохраняет все измененные данные
+            из DataGrid в базу данных
+            </summary>
+        </member>
+        <member name="M:AHlibrary.DBconnect.AuthCheck(System.Windows.Controls.TextBox,System.Windows.Controls.PasswordBox,System.String)">
+            <summary>
+            Проверка авторизации пользователя
+            </summary>
+            <param name="textBox"></param>
+            <param name="passwordBox"></param>
+        </member>
+    </members>
+</doc>

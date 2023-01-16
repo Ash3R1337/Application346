@@ -1,0 +1,79 @@
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Web.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\Google.Protobuf.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\ZstdNet.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\System.Buffers.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.xml
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Web.xml
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\test.RKRIPT\Documents\Visual Studio 2015\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.XML
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.csprojResolveAssemblyReference.cache
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.XML
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\Google.Protobuf.dll
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\ZstdNet.dll
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\BouncyCastle.Crypto.dll
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\Ubiety.Dns.Core.dll
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\System.Memory.dll
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\System.Buffers.dll
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Compression.LZ4.dll
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Hash.xxHash.dll
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\System.Numerics.Vectors.dll
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.xml
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.EntityFramework.xml
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Web.xml
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.csproj.AssemblyReference.cache
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.csproj.CoreCompileInputs.cache
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.csproj.CopyComplete
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+E:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.EntityFramework.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Web.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\Google.Protobuf.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\ZstdNet.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\BouncyCastle.Crypto.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\Ubiety.Dns.Core.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\System.Memory.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\System.Buffers.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Compression.LZ4.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Hash.xxHash.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\System.Numerics.Vectors.dll
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.xml
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.EntityFramework.xml
+D:\Колледж\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Web.xml
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.XML
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\Google.Protobuf.dll
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\ZstdNet.dll
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\BouncyCastle.Crypto.dll
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\Ubiety.Dns.Core.dll
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\System.Memory.dll
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\System.Buffers.dll
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Compression.LZ4.dll
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\K4os.Hash.xxHash.dll
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\System.Numerics.Vectors.dll
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.xml
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Data.EntityFramework.xml
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\bin\Debug\MySql.Web.xml
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.csproj.AssemblyReference.cache
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.csproj.CoreCompileInputs.cache
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.csproj.CopyComplete
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+D:\DiskPC\Флешка\Работы\МДК3\Курсовая\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
