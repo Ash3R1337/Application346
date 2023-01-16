@@ -117,3 +117,13 @@ C:\Users\Ash3R\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.cspr
 C:\Users\Ash3R\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.csproj.CopyComplete
 C:\Users\Ash3R\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\Ash3R\source\repos\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Ash3R\source\repos\Ash3R1337\Application346\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.XML
+C:\Users\Ash3R\source\repos\Ash3R1337\Application346\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Ash3R\source\repos\Ash3R1337\Application346\ClassLibrary1\ClassLibrary1\bin\Debug\System.Memory.dll
+C:\Users\Ash3R\source\repos\Ash3R1337\Application346\ClassLibrary1\ClassLibrary1\bin\Debug\System.Buffers.dll
+C:\Users\Ash3R\source\repos\Ash3R1337\Application346\ClassLibrary1\ClassLibrary1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Ash3R\source\repos\Ash3R1337\Application346\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.csproj.AssemblyReference.cache
+C:\Users\Ash3R\source\repos\Ash3R1337\Application346\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.csproj.CoreCompileInputs.cache
+C:\Users\Ash3R\source\repos\Ash3R1337\Application346\ClassLibrary1\ClassLibrary1\obj\Debug\AHlibrary.csproj.CopyComplete
+C:\Users\Ash3R\source\repos\Ash3R1337\Application346\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Ash3R\source\repos\Ash3R1337\Application346\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

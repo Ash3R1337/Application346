@@ -3,6 +3,7 @@ using MySql.Data.MySqlClient;
 using System.Data.Common;
 using System.Windows.Controls;
 using System.Windows;
+using System;
 
 namespace AHlibrary
 {
@@ -45,6 +46,34 @@ namespace AHlibrary
             dt = new DataTable();
             adapter.Fill(dt); //загрузка данных
             dataGrid.ItemsSource = dt.DefaultView; //привязка к DataGrid
+        }
+
+        public void AddValues(string table, int id_client, int id_product, int total, int amount)
+        {
+            string sql = $"INSERT INTO {table} (id_client, id_product, total, amount) VALUES (@clien, @prod, @tot, @am)";
+            MySqlCommand command = new MySqlCommand(sql, conn);
+            command.Parameters.AddWithValue("@clien", id_client);
+            command.Parameters.AddWithValue("@prod", id_product);
+            command.Parameters.AddWithValue("@tot", total);
+            command.Parameters.AddWithValue("@am", amount);
+            command.ExecuteNonQuery();
+
+        }
+
+        /// <summary>
+        /// Получение значения из таблицы
+        /// </summary>
+        /// <param name="table">Из какой таблицы получить элемент</param>
+        /// <param name="inputItem">В каком столбце делать сравнение</param>
+        /// <param name="value">Откуда получить значение</param>
+        /// <param name="textBox">С помощью какой строки получить элемент</param>
+        /// <returns></returns>
+        public string GetValueByString(string table, string inputItem, string value, string textBox)
+        {
+            string sql = $"SELECT {value} FROM {table} WHERE {inputItem} = '{textBox}'";
+            MySqlCommand command = new MySqlCommand(sql, conn);
+            string result = Convert.ToString(command.ExecuteScalar());
+            return result;
         }
 
         /// <summary>

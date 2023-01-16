@@ -30,14 +30,14 @@ namespace Application346
         {
             Orders orders = new Orders();
             orders.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void TablesBtn_Click(object sender, RoutedEventArgs e)
         {
             Tables tables = new Tables();
             tables.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
@@ -49,7 +49,7 @@ namespace Application346
         {
             Report report = new Report();
             report.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

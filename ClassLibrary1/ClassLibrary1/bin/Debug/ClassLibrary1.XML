@@ -26,6 +26,16 @@
             <param name="password">Пароль для
             подключения к БД</param>
         </member>
+        <member name="M:AHlibrary.DBconnect.GetValueByString(System.String,System.String,System.String,System.String)">
+            <summary>
+            Получение значения из таблицы
+            </summary>
+            <param name="table">Из какой таблицы получить элемент</param>
+            <param name="inputItem">В каком столбце делать сравнение</param>
+            <param name="value">Откуда получить значение</param>
+            <param name="textBox">С помощью какой строки получить элемент</param>
+            <returns></returns>
+        </member>
         <member name="M:AHlibrary.DBconnect.TableSearch(System.Windows.Controls.DataGrid,System.String,System.String,System.String)">
             <summary>
             Поиск строки в таблице
