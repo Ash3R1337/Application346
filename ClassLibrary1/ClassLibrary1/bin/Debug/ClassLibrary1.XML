@@ -26,6 +26,16 @@
             <param name="password">Пароль для
             подключения к БД</param>
         </member>
+        <member name="M:AHlibrary.DBconnect.AddValues(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Заполнение таблицы
+            </summary>
+            <param name="table"></param>
+            <param name="id_client"></param>
+            <param name="id_product"></param>
+            <param name="total"></param>
+            <param name="amount"></param>
+        </member>
         <member name="M:AHlibrary.DBconnect.GetValueByString(System.String,System.String,System.String,System.String)">
             <summary>
             Получение значения из таблицы
@@ -58,6 +68,17 @@
             Сохраняет все измененные данные
             из DataGrid в базу данных   
             </summary>
+        </member>
+        <member name="M:AHlibrary.DBconnect.MakeReport(System.Windows.Controls.Label,System.Windows.Controls.Label,System.Windows.Controls.Label,System.Windows.Controls.Label,System.Windows.Controls.Label,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="AmountLabel"></param>
+            <param name="PeapoleLabel"></param>
+            <param name="WomanLabel"></param>
+            <param name="MostModelLabel"></param>
+            <param name="MosBrandLabel"></param>
+            <param name="password"></param>
         </member>
         <member name="M:AHlibrary.DBconnect.AuthCheck(System.Windows.Controls.TextBox,System.Windows.Controls.PasswordBox,System.String)">
             <summary>

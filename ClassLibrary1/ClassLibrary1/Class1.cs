@@ -48,6 +48,14 @@ namespace AHlibrary
             dataGrid.ItemsSource = dt.DefaultView; //привязка к DataGrid
         }
 
+        /// <summary>
+        /// Заполнение таблицы
+        /// </summary>
+        /// <param name="table"></param>
+        /// <param name="id_client"></param>
+        /// <param name="id_product"></param>
+        /// <param name="total"></param>
+        /// <param name="amount"></param>
         public void AddValues(string table, int id_client, int id_product, int total, int amount)
         {
             string sql = $"INSERT INTO {table} (id_client, id_product, total, amount) VALUES (@clien, @prod, @tot, @am)";
@@ -120,6 +128,46 @@ namespace AHlibrary
         {
             adapter.Update(dt);
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="AmountLabel"></param>
+        /// <param name="PeapoleLabel"></param>
+        /// <param name="WomanLabel"></param>
+        /// <param name="MostModelLabel"></param>
+        /// <param name="MosBrandLabel"></param>
+        /// <param name="password"></param>
+        public void MakeReport(Label AmountLabel, Label PeapoleLabel, Label WomanLabel, Label MostModelLabel, Label MosBrandLabel, string password) //Только для Application346
+        {
+            conn = new MySqlConnection("server=localhost;user=root;database=watches;port=3306;password=" + password + ";");
+            conn.Open();
+            string sql1 = $"SELECT count(id_request) FROM заявка";
+            MySqlCommand command1 = new MySqlCommand(sql1, conn);
+            string result1 = Convert.ToString(command1.ExecuteScalar());
+            AmountLabel.Content = $"Кол-во заявок: {result1}";
+
+            string sql2 = $"SELECT count(id_sex) FROM часы WHERE id_sex = 1";
+            MySqlCommand command2 = new MySqlCommand(sql2, conn);
+            string result2 = Convert.ToString(command2.ExecuteScalar());
+            PeapoleLabel.Content = $"Кол-во мужских часов: {result2}";
+
+            string sql3 = $"SELECT count(id_sex) FROM часы WHERE id_sex = 2";
+            MySqlCommand command3 = new MySqlCommand(sql3, conn);
+            string result3 = Convert.ToString(command3.ExecuteScalar());
+            WomanLabel.Content = $"Кол-во женских часов: {result3}";
+
+            string sql4 = $"SELECT часы.name FROM заявка JOIN часы ON заявка.id_product = часы.id_product GROUP BY заявка.id_product ORDER BY count(*) DESC LIMIT 1";
+            MySqlCommand command4 = new MySqlCommand(sql4, conn);
+            string result4 = Convert.ToString(command4.ExecuteScalar());
+            MostModelLabel.Content = $"Самая пополурная модель: {result4}";
+
+            string sql5 = $"SELECT brand FROM бренд JOIN часы ON бренд.id_brand = часы.id_brand WHERE name = '{result4}'";
+            MySqlCommand command5 = new MySqlCommand(sql5, conn);
+            string result5 = Convert.ToString(command5.ExecuteScalar());
+            MosBrandLabel.Content = $"Самая пополурный бренд: {result5}";
+        }
+        
 
         /// <summary>
         /// Проверка авторизации пользователя

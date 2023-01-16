@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using AHlibrary;
 
 namespace Application346
 {
@@ -22,6 +12,9 @@ namespace Application346
         public Report()
         {
             InitializeComponent();
+            ReportLabel.Content = $"Отчет за {DateTime.Today.ToShortDateString()}";
+            DBconnect dBconnect = new DBconnect();
+            dBconnect.MakeReport(AmountLabel, PeapoleLabel, WomanLabel, MostModelLabel, MosBrandLabel, "root");
         }
 
         private void BackBtn_Click(object sender, RoutedEventArgs e)
