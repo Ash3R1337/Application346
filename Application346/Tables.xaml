@@ -10,7 +10,15 @@
         <ImageBrush ImageSource="backgroun1d.png" Stretch="UniformToFill"/>
     </Window.Background>
     <Grid>
-        <ComboBox x:Name="SelectTablesComboBox" HorizontalAlignment="Left" Margin="11,38,0,0" VerticalAlignment="Top" Width="276" FontFamily="Arial" FontSize="24" ShouldPreserveUserEnteredPrefix="True" Style="{DynamicResource ComboBoxStyle1}" Foreground="Gold"/>
+        <ComboBox x:Name="SelectTablesComboBox" HorizontalAlignment="Left" Margin="11,38,0,0" VerticalAlignment="Top" Width="276" FontFamily="Arial" FontSize="24" ShouldPreserveUserEnteredPrefix="True" Style="{DynamicResource ComboBoxStyle1}" Foreground="Gold">
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="Background" Value="#E5492500"/>
+                    <Setter Property="BorderBrush" Value="Gold"/>
+                </Style>
+            </ComboBox.ItemContainerStyle>
+        </ComboBox>
+
         <Label x:Name="TablesLabel" Content="Таблицы" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" Foreground="Gold" FontFamily="Arial" FontSize="24" FontWeight="Bold"/>
         <Button x:Name="TablesOpenBtn" Content="Открыть" Margin="0,38,394,0" Width="114" Height="34" Background="#A5492500" BorderBrush="Gold" Foreground="Gold" FontSize="20" FontFamily="Arial" VerticalAlignment="Top" Padding="0,1" Click="TablesOpenBtn_Click" HorizontalAlignment="Right"/>
         <Button x:Name="TablesSaveBtn" Content="Сохранить" HorizontalAlignment="Right" Margin="0,38,275,0" Width="114" Height="34" Background="#A5492500" BorderBrush="Gold" Foreground="Gold" FontSize="20" FontFamily="Arial" VerticalAlignment="Top" Padding="0,1" Click="TablesSaveBtn_Click"/>

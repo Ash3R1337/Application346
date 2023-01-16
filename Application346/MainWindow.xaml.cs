@@ -44,5 +44,12 @@ namespace Application346
         {
             this.Close();
         }
+
+        private void ReportsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Report report = new Report();
+            report.Show();
+            this.Hide();
+        }
     }
 }

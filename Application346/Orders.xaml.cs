@@ -24,8 +24,8 @@ namespace Application346
         public Orders()
         {
             InitializeComponent();
-            dBconnect.DB("watches", "клиенты", ClientsDataGrid, "root");
-            dBconnect.FillCombobox(WatchesNameComboBox, "name", "часы");
+            //dBconnect.DB("watches", "клиенты", ClientsDataGrid, "root");
+           // dBconnect.FillCombobox(WatchesNameComboBox, "name", "часы");
         }
 
         private void BackBtn_Click(object sender, RoutedEventArgs e)
@@ -37,15 +37,20 @@ namespace Application346
 
         private void ClientFoundBtn_Click(object sender, RoutedEventArgs e)
         {
-            dBconnect.TableSearch(ClientsDataGrid, ClientFoundTextBox.Text);
-            if (ClientsDataGrid.Items.Count < 2)
-                MessageBox.Show("Клиент не найден! Добавьте нового клиента.");
+            //dBconnect.TableSearch(ClientsDataGrid, ClientFoundTextBox.Text);
+            //if (ClientsDataGrid.Items.Count < 2)
+                //MessageBox.Show("Клиент не найден! Добавьте нового клиента.");
         }
 
         private void ClientSavedBtn_Click(object sender, RoutedEventArgs e)
         {
-            dBconnect.SaveTable();
-            MessageBox.Show("Новый клиент успешно добавлен");
+           // dBconnect.SaveTable();
+            //MessageBox.Show("Новый клиент успешно добавлен");
+        }
+
+        private void ConfirmBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
