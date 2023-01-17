@@ -160,12 +160,12 @@ namespace AHlibrary
             string sql4 = $"SELECT часы.name FROM заявка JOIN часы ON заявка.id_product = часы.id_product GROUP BY заявка.id_product ORDER BY count(*) DESC LIMIT 1";
             MySqlCommand command4 = new MySqlCommand(sql4, conn);
             string result4 = Convert.ToString(command4.ExecuteScalar());
-            MostModelLabel.Content = $"Самая пополурная модель: {result4}";
+            MostModelLabel.Content = $"Самая популярная модель: {result4}";
 
             string sql5 = $"SELECT brand FROM бренд JOIN часы ON бренд.id_brand = часы.id_brand WHERE name = '{result4}'";
             MySqlCommand command5 = new MySqlCommand(sql5, conn);
             string result5 = Convert.ToString(command5.ExecuteScalar());
-            MosBrandLabel.Content = $"Самая пополурный бренд: {result5}";
+            MosBrandLabel.Content = $"Самый популярный бренд: {result5}";
         }
         
 
